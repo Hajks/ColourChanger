@@ -33,7 +33,7 @@ namespace ColourChanger
 
                if (c == 255)
                 {
-                    while (c > 0)
+                    while (c > 0 && Visible)
                     {
                         BackColor = Color.FromArgb(c, 255 - c, c);
                         Application.DoEvents();
